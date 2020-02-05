@@ -4,6 +4,13 @@
 */
 function mostrar()
 {
+var nombre;
+// solicito nombre por prompt (ventana emergente)
+nombre = prompt ("Ingrese su nombre");
+/* el dato ingresado en la ventana 
+se muestra en la caja de texto (ID)*/
+document.getElementById("elNombre").value=nombre;
+
 
 }
 
