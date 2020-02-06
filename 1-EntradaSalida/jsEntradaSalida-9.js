@@ -4,15 +4,21 @@ mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
-    var num1;
-    var resultado;
+    var importe;
+    var aumento;
+    var importeFinal;
 
 // tomo el caracter ingresado en la caja de texto y lo guardo en la variable
-num1=document.getElementById("sueldo").value;
+importe=document.getElementById("sueldo").value;
+
 // convierto la cadena de carácteres a número
-num1=parseInt(num1); 
+importe = parseInt(importe); 
+
 //realizo la operación con el número dado
-resultado= num1 + ( (num1 *10) / 100);
+descuento=  (importe * 10) / 100;
+
+importeFinal= importe + descuento
+
 // muestro el resultado 
-    document.getElementById("resultado").value=resultado;
+    document.getElementById("resultado").value= importeFinal;
 }
